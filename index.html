@@ -64,6 +64,7 @@
       justify-content: center;
       gap: 10px;
       margin-bottom: 20px;
+      flex-wrap: wrap;
     }
 
     .btn {
@@ -111,6 +112,50 @@
       position: fixed;
       width: 100%;
       bottom: 0;
+    }
+
+    @media (max-width: 768px) {
+
+      th,
+      td {
+        padding: 8px;
+        font-size: 12px;
+      }
+
+      .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+
+      header {
+        font-size: 20px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      th,
+      td {
+        padding: 6px;
+        font-size: 10px;
+      }
+
+      .btn {
+        padding: 6px 12px;
+        font-size: 10px;
+      }
+
+      header {
+        font-size: 18px;
+      }
+
+      footer {
+        font-size: 10px;
+      }
     }
   </style>
 </head>
@@ -264,7 +309,7 @@
   </div>
 
   <footer>
-    Todos los derechos reservados Hemisterhe
+    Todos los derechos reservados Hemisterhe 2025
   </footer>
 
 </body>
