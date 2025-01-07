@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen de Días de Descanso y Clases por Semana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f7f7f7;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .descanso {
+      background-color: #e6f7ff;
+      font-weight: bold;
+      color: #0077b3;
+    }
+
+    .total-cursos {
+      background-color: #ffebc2;
+      color: #5a5a5a;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background-color: #45a049;
+    }
+
+    .day-details {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .day-details.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Resumen de Días de Descanso y Clases por Semana</h2>
+  <h2>Consulta los Horarios de cada dia</h2>
+  <div class="btn-group">
+    <a href="lunes.html">
+      <button class="btn">Lunes</button>
+    </a>
+    <a href="martes.html">
+      <button class="btn">Martes</button>
+    </a>
+    <a href="miercoles.html">
+      <button class="btn">Miercoles</button>
+    </a>
+    <a href="jueves.html">
+      <button class="btn">Jueves</button>
+    </a>
+    <a href="viernes.html">
+      <button class="btn"><a href="miercoles.html">
+          <button class="btn">Viernes</button>
+        </a>
+      </button>
+    </a>
+
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Asignatura</th>
+        <th>Maestro/a</th>
+        <th>Día de descanso</th>
+        <th>Clases por semana</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Matemáticas</td>
+        <td>Daniela</td>
+        <td class="descanso">Ninguno</td>
+        <td class="total-cursos">5 (por sección)</td>
+      </tr>
+      <tr>
+        <td>Idioma Español</td>
+        <td>Sara</td>
+        <td class="descanso">Ninguno</td>
+        <td class="total-cursos">5 (por sección)</td>
+      </tr>
+      <tr>
+        <td>Ciencias Naturales</td>
+        <td>Seño One</td>
+        <td class="descanso">Martes</td>
+        <td class="total-cursos">5 (1A y 1B) + 4 (Ciencias Sociales)</td>
+      </tr>
+      <tr>
+        <td>Ciencias Naturales</td>
+        <td>Seño Julia Marina</td>
+        <td class="descanso">Viernes</td>
+        <td class="total-cursos">5 (1C a 3B)</td>
+      </tr>
+      <tr>
+        <td>Ciencias Sociales</td>
+        <td>Jennifer</td>
+        <td class="descanso">Viernes</td>
+        <td class="total-cursos">4 (2A a 3B)</td>
+      </tr>
+      <tr>
+        <td>Kiché</td>
+        <td>Seño Claudia</td>
+        <td class="descanso">Jueves</td>
+        <td class="total-cursos">5 (1A a 2A)</td>
+      </tr>
+      <tr>
+        <td>Kiché</td>
+        <td>Seño Leydi</td>
+        <td class="descanso">Martes</td>
+        <td class="total-cursos">5 (2B a 3B)</td>
+      </tr>
+      <tr>
+        <td>Expresión Artística</td>
+        <td>Seño Glendy</td>
+        <td class="descanso">Lunes</td>
+        <td class="total-cursos">4 (1A)</td>
+      </tr>
+      <tr>
+        <td>Expresión Artística</td>
+        <td>Marcobaldo</td>
+        <td class="descanso">Miércoles</td>
+        <td class="total-cursos">4 (1B y 1C)</td>
+      </tr>
+      <tr>
+        <td>Expresión Artística</td>
+        <td>Mario</td>
+        <td class="descanso">Miércoles</td>
+        <td class="total-cursos">4 (2A a 3B)</td>
+      </tr>
+      <tr>
+        <td>Emprendimiento</td>
+        <td>Seño Greis</td>
+        <td class="descanso">Jueves</td>
+        <td class="total-cursos">3 (todas las secciones)</td>
+      </tr>
+      <tr>
+        <td>Inglés</td>
+        <td>Seño Miriam</td>
+        <td class="descanso">Lunes</td>
+        <td class="total-cursos">3 (todas las secciones)</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>Marcobaldo</td>
+        <td class="descanso">Miércoles</td>
+        <td class="total-cursos">2 (todas las secciones)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="day-details" id="lunes">
+    <h3>Clases para Lunes</h3>
+    <p><strong>Matemáticas</strong> - Daniela: 5 clases</p>
+    <p><strong>Expresión Artística</strong> - Seño Glendy: 4 clases (1A)</p>
+    <p><strong>Inglés</strong> - Seño Miriam: 3 clases (todas las secciones)</p>
+  </div>
+
+  <div class="day-details" id="martes">
+    <h3>Clases para Martes</h3>
+    <p><strong>Ciencias Naturales</strong> - Seño One: 5 clases (1A y 1B) + 4 (Ciencias Sociales)</p>
+    <p><strong>Kiché</strong> - Seño Leydi: 5 clases (2B a 3B)</p>
+  </div>
+
+  <div class="day-details" id="miércoles">
+    <h3>Clases para Miércoles</h3>
+    <p><strong>Expresión Artística</strong> - Marcobaldo: 4 clases (1B y 1C)</p>
+    <p><strong>Expresión Artística</strong> - Mario: 4 clases (2A a 3B)</p>
+    <p><strong>Física</strong> - Marcobaldo: 2 clases (todas las secciones)</p>
+  </div>
+
+  <div class="day-details" id="jueves">
+    <h3>Clases para Jueves</h3>
+    <p><strong>Kiché</strong> - Seño Claudia: 5 clases (1A a 2A)</p>
+    <p><strong>Emprendimiento</strong> - Seño Greis: 3 clases (todas las secciones)</p>
+  </div>
+
+  <div class="day-details" id="viernes">
+    <h3>Clases para Viernes</h3>
+    <p><strong>Ciencias Naturales</strong> - Seño Julia Marina: 5 clases (1C a 3B)</p>
+    <p><strong>Ciencias Sociales</strong> - Jennifer: 4 clases (2A a 3B)</p>
+  </div>
+
+</body>
+
+</html>
